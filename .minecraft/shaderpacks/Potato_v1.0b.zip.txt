@@ -1,0 +1,4 @@
+#Sun Mar 05 11:42:25 GMT+01:00 2023
+fogEnabled=false
+transparencyBlurEnabled=false
+waterFogEnabled=false

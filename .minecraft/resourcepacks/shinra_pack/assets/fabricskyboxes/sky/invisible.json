@@ -1,0 +1,27 @@
+{
+    "schemaVersion": 2,
+    "type": "single-sprite-square-textured",
+    "conditions": {
+        "worlds": ["minecraft:overworld"]
+    },
+    "decorations": {
+        "showSun": false,
+        "showMoon": true,
+        "showStars": true
+    },
+    "properties": {
+		"fade": {
+			"startFadeIn": 0,
+			"endFadeIn": 1,
+			"startFadeOut": 2,
+			"endFadeOut": 3,
+			"alwaysOn": true
+			},
+        "skySunTint": false,
+        "shouldRotate": true
+    },
+    "blend": {
+        "type": "alpha"
+    },
+    "texture": "fabricskyboxes:sky/cloud1.png"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "1.19.3-OptiFine_HD_U_I2_pre5",
+  "inheritsFrom": "1.19.3",
+  "time": "2023-03-05T21:22:08+01:00",
+  "releaseTime": "2023-03-05T21:22:08+01:00",
+  "type": "release",
+  "libraries": [
+    {
+      "name": "optifine:OptiFine:1.19.3_HD_U_I2_pre5"
+    },
+    {
+      "name": "optifine:launchwrapper-of:2.3"
+    }
+  ],
+  "mainClass": "net.minecraft.launchwrapper.Launch",
+  "arguments": {
+    "game": [
+      "--tweakClass",
+      "optifine.OptiFineTweaker"
+    ]
+  }
+}

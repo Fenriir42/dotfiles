@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 2,
+  "type": "single-sprite-square-textured",
+  "blend": {
+    "type": "add"
+  },
+  "texture": "minecraft:optifine/sky/world0/starfield03.png",
+  "properties": {
+    "fade": {
+      "startFadeIn": 12500,
+      "endFadeIn": 12750,
+      "startFadeOut": 23167,
+      "endFadeOut": 23417
+    },
+    "shouldRotate": true,
+    "rotation": {
+      "axis": [
+        0.0,
+        -18.0,
+        0.0
+      ]
+    }
+  },
+  "conditions": {
+    "worlds": [
+      "minecraft:overworld"
+    ]
+  },
+  "decorations": {
+    "showStars": false,
+    "showSun": false,
+    "showMoon": false
+  }
+}

@@ -1,0 +1,6 @@
+[Info: 2023-05-13 06:47:44.9111034: NetQueue.cpp(186)] NetQueue: Setting up.
+[Info: 2023-05-13 06:47:44.9119085: mainWindows.cpp(81)] Running launcher bootstrap (version 1.2.4)
+[Info: 2023-05-13 06:47:44.9118194: NetQueue.cpp(671)] NetQueue: worker thread started.
+[Error: 2023-05-13 06:47:45.0265486: localization.cpp(110)] No translation found for "Failed to initialize GDK, please make sure Xbox App and Gaming Services are up to date and running."
+[Info: 2023-05-13 06:47:45.0298596: mainWindows.cpp(198)] Triggering reopen event...
+[Info: 2023-05-13 06:47:45.0299121: mainWindows.cpp(201)] Success!

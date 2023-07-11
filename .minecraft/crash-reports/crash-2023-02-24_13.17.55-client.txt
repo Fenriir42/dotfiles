@@ -1,0 +1,172 @@
+---- Minecraft Crash Report ----
+// I bet Cylons wouldn't have this problem.
+
+Time: 2023-02-24 13:17:55
+Description: Registering texture
+
+java.lang.UnsatisfiedLinkError: 'int com.luciad.imageio.webp.WebP.getInfo(byte[], int, int, int[])'
+	at Genesis//com.luciad.imageio.webp.WebP.getInfo(Native Method)
+	at Genesis//com.luciad.imageio.webp.WebP.getInfo(Unknown Source)
+	at Genesis//com.luciad.imageio.webp.WebPReader.readHeader(Unknown Source)
+	at Genesis//com.luciad.imageio.webp.WebPReader.read(Unknown Source)
+	at java.desktop/javax.imageio.ImageReader.read(Unknown Source)
+	at Genesis//com.moonsworth.lunar.OOIICIOOIORHCCOHOIRHCRCHI.ICHCHIOCHHIRIRRICRCHCHIRH.IOOOIORRIHORICOHHIHIORRCR.ORRCICHIRHROCOCCICHCCCORI(Unknown Source)
+	at Genesis//net.minecraft.client.renderer.texture.HttpTexture.impl$load(SourceFile:684)
+	at Genesis//net.minecraft.client.renderer.texture.HttpTexture.load(SourceFile:616)
+	at Genesis//net.minecraft.client.renderer.texture.TextureManager.loadTexture(SourceFile:96)
+	at Genesis//net.minecraft.client.renderer.texture.TextureManager.register(SourceFile:68)
+	at Genesis//net.minecraft.client.renderer.texture.TextureManager.bridge$loadTexture(SourceFile:553)
+	at Genesis//com.moonsworth.lunar.OOIICIOOIORHCCOHOIRHCRCHI.HRHHHHRRORIRHIHCCOOHRIIRC.OOIICIOOIORHCCOHOIRHCRCHI.ORRCICHIRHROCOCCICHCCCORI.RIORRIIOIICIRIORHRCHCHHIO(Unknown Source)
+	at Genesis//com.moonsworth.lunar.OOIICIOOIORHCCOHOIRHCRCHI.HOOOIHHOORRCIOCIRCHORIRCO.IRROOIIOCHHOOOOIHCIRIOCRH.OCCROORRHCHHCRICCHCOCRCRH.OOIICIOOIORHCCOHOIRHCRCHI.RHOHRRIRHCCOOOIRCHIOHRROH(Unknown Source)
+	at Genesis//com.moonsworth.lunar.OOIICIOOIORHCCOHOIRHCRCHI.HOOOIHHOORRCIOCIRCHORIRCO.IRROOIIOCHHOOOOIHCIRIOCRH.OCCROORRHCHHCRICCHCOCRCRH.OCCROORRHCHHCRICCHCOCRCRH.RHOHRRIRHCCOOOIRCHIOHRROH(Unknown Source)
+	at Genesis//com.moonsworth.lunar.OOIICIOOIORHCCOHOIRHCRCHI.HOOOIHHOORRCIOCIRCHORIRCO.IRROOIIOCHHOOOOIHCIRIOCRH.OCCROORRHCHHCRICCHCOCRCRH.ORRCICHIRHROCOCCICHCCCORI(Unknown Source)
+	at Genesis//com.moonsworth.lunar.OOIICIOOIORHCCOHOIRHCRCHI.HOOOIHHOORRCIOCIRCHORIRCO.IRROOIIOCHHOOOOIHCIRIOCRH.OCCROORRHCHHCRICCHCOCRCRH.CICRCHCICICHOIRHOORHCOCHR.ORRCICHIRHROCOCCICHCCCORI(Unknown Source)
+	at Genesis//com.moonsworth.lunar.OOIICIOOIORHCCOHOIRHCRCHI.HOOOIHHOORRCIOCIRCHORIRCO.IRROOIIOCHHOOOOIHCIRIOCRH.OCCROORRHCHHCRICCHCOCRCRH.OCCROORRHCHHCRICCHCOCRCRH.ORRCICHIRHROCOCCICHCCCORI(Unknown Source)
+	at Genesis//com.moonsworth.lunar.IIOIOOROORCOOHICOICRHRIHH.CIHIHCIRORRRHCHCOHRRCHCHO.OOIICIOOIORHCCOHOIRHCRCHI.RHOHRRIRHCCOOOIRCHIOHRROH.CICRCHCICICHOIRHOORHCOCHR.render(Unknown Source)
+	at Genesis//net.minecraft.client.gui.screens.LoadingOverlay.render(SourceFile:85)
+	at Genesis//net.minecraft.client.renderer.GameRenderer.render(SourceFile:918)
+	at Genesis//net.minecraft.client.Minecraft.runTick(SourceFile:1193)
+	at Genesis//net.minecraft.client.Minecraft.run(SourceFile:781)
+	at Genesis//net.minecraft.client.main.Main.run(SourceFile:244)
+	at Genesis//net.minecraft.client.main.Main.main(SourceFile:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at com.moonsworth.lunar.genesis.Genesis.main(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at Genesis//com.luciad.imageio.webp.WebP.getInfo(Native Method)
+	at Genesis//com.luciad.imageio.webp.WebP.getInfo(Unknown Source)
+	at Genesis//com.luciad.imageio.webp.WebPReader.readHeader(Unknown Source)
+	at Genesis//com.luciad.imageio.webp.WebPReader.read(Unknown Source)
+	at java.desktop/javax.imageio.ImageReader.read(Unknown Source)
+	at Genesis//com.moonsworth.lunar.OOIICIOOIORHCCOHOIRHCRCHI.ICHCHIOCHHIRIRRICRCHCHIRH.IOOOIORRIHORICOHHIHIORRCR.ORRCICHIRHROCOCCICHCCCORI(Unknown Source)
+	at Genesis//net.minecraft.client.renderer.texture.HttpTexture.impl$load(SourceFile:684)
+	at Genesis//net.minecraft.client.renderer.texture.HttpTexture.load(SourceFile:616)
+	at Genesis//net.minecraft.client.renderer.texture.TextureManager.loadTexture(SourceFile:96)
+	at Genesis//net.minecraft.client.renderer.texture.TextureManager.register(SourceFile:68)
+	at Genesis//net.minecraft.client.renderer.texture.TextureManager.bridge$loadTexture(SourceFile:553)
+	at Genesis//com.moonsworth.lunar.OOIICIOOIORHCCOHOIRHCRCHI.HRHHHHRRORIRHIHCCOOHRIIRC.OOIICIOOIORHCCOHOIRHCRCHI.ORRCICHIRHROCOCCICHCCCORI.RIORRIIOIICIRIORHRCHCHHIO(Unknown Source)
+	at Genesis//com.moonsworth.lunar.OOIICIOOIORHCCOHOIRHCRCHI.HOOOIHHOORRCIOCIRCHORIRCO.IRROOIIOCHHOOOOIHCIRIOCRH.OCCROORRHCHHCRICCHCOCRCRH.OOIICIOOIORHCCOHOIRHCRCHI.RHOHRRIRHCCOOOIRCHIOHRROH(Unknown Source)
+	at Genesis//com.moonsworth.lunar.OOIICIOOIORHCCOHOIRHCRCHI.HOOOIHHOORRCIOCIRCHORIRCO.IRROOIIOCHHOOOOIHCIRIOCRH.OCCROORRHCHHCRICCHCOCRCRH.OCCROORRHCHHCRICCHCOCRCRH.RHOHRRIRHCCOOOIRCHIOHRROH(Unknown Source)
+	at Genesis//com.moonsworth.lunar.OOIICIOOIORHCCOHOIRHCRCHI.HOOOIHHOORRCIOCIRCHORIRCO.IRROOIIOCHHOOOOIHCIRIOCRH.OCCROORRHCHHCRICCHCOCRCRH.ORRCICHIRHROCOCCICHCCCORI(Unknown Source)
+	at Genesis//com.moonsworth.lunar.OOIICIOOIORHCCOHOIRHCRCHI.HOOOIHHOORRCIOCIRCHORIRCO.IRROOIIOCHHOOOOIHCIRIOCRH.OCCROORRHCHHCRICCHCOCRCRH.CICRCHCICICHOIRHOORHCOCHR.ORRCICHIRHROCOCCICHCCCORI(Unknown Source)
+	at Genesis//com.moonsworth.lunar.OOIICIOOIORHCCOHOIRHCRCHI.HOOOIHHOORRCIOCIRCHORIRCO.IRROOIIOCHHOOOOIHCIRIOCRH.OCCROORRHCHHCRICCHCOCRCRH.OCCROORRHCHHCRICCHCOCRCRH.ORRCICHIRHROCOCCICHCCCORI(Unknown Source)
+	at Genesis//com.moonsworth.lunar.IIOIOOROORCOOHICOICRHRIHH.CIHIHCIRORRRHCHCOHRRCHCHO.OOIICIOOIORHCCOHOIRHCRCHI.RHOHRRIRHCCOOOIRCHIOHRROH.CICRCHCICICHOIRHOORHCOCHR.render(Unknown Source)
+	at Genesis//net.minecraft.client.gui.screens.LoadingOverlay.render(SourceFile:85)
+
+-- Resource location being registered --
+Details:
+	Resource location: lunar:84ee113fdfe9138e825e05adcf34e0cb
+	Texture object class: net.minecraft.client.renderer.texture.HttpTexture
+Stacktrace:
+	at Genesis//net.minecraft.client.renderer.texture.TextureManager.loadTexture(SourceFile:96)
+	at Genesis//net.minecraft.client.renderer.texture.TextureManager.register(SourceFile:68)
+	at Genesis//net.minecraft.client.renderer.texture.TextureManager.bridge$loadTexture(SourceFile:553)
+	at Genesis//com.moonsworth.lunar.OOIICIOOIORHCCOHOIRHCRCHI.HRHHHHRRORIRHIHCCOOHRIIRC.OOIICIOOIORHCCOHOIRHCRCHI.ORRCICHIRHROCOCCICHCCCORI.RIORRIIOIICIRIORHRCHCHHIO(Unknown Source)
+	at Genesis//com.moonsworth.lunar.OOIICIOOIORHCCOHOIRHCRCHI.HOOOIHHOORRCIOCIRCHORIRCO.IRROOIIOCHHOOOOIHCIRIOCRH.OCCROORRHCHHCRICCHCOCRCRH.OOIICIOOIORHCCOHOIRHCRCHI.RHOHRRIRHCCOOOIRCHIOHRROH(Unknown Source)
+	at Genesis//com.moonsworth.lunar.OOIICIOOIORHCCOHOIRHCRCHI.HOOOIHHOORRCIOCIRCHORIRCO.IRROOIIOCHHOOOOIHCIRIOCRH.OCCROORRHCHHCRICCHCOCRCRH.OCCROORRHCHHCRICCHCOCRCRH.RHOHRRIRHCCOOOIRCHIOHRROH(Unknown Source)
+	at Genesis//com.moonsworth.lunar.OOIICIOOIORHCCOHOIRHCRCHI.HOOOIHHOORRCIOCIRCHORIRCO.IRROOIIOCHHOOOOIHCIRIOCRH.OCCROORRHCHHCRICCHCOCRCRH.ORRCICHIRHROCOCCICHCCCORI(Unknown Source)
+	at Genesis//com.moonsworth.lunar.OOIICIOOIORHCCOHOIRHCRCHI.HOOOIHHOORRCIOCIRCHORIRCO.IRROOIIOCHHOOOOIHCIRIOCRH.OCCROORRHCHHCRICCHCOCRCRH.CICRCHCICICHOIRHOORHCOCHR.ORRCICHIRHROCOCCICHCCCORI(Unknown Source)
+	at Genesis//com.moonsworth.lunar.OOIICIOOIORHCCOHOIRHCRCHI.HOOOIHHOORRCIOCIRCHORIRCO.IRROOIIOCHHOOOOIHCIRIOCRH.OCCROORRHCHHCRICCHCOCRCRH.OCCROORRHCHHCRICCHCOCRCRH.ORRCICHIRHROCOCCICHCCCORI(Unknown Source)
+	at Genesis//com.moonsworth.lunar.IIOIOOROORCOOHICOICRHRIHH.CIHIHCIRORRRHCHCOHRRCHCHO.OOIICIOOIORHCCOHOIRHCRCHI.RHOHRRIRHCCOOOIRCHIOHRROH.CICRCHCICICHOIRHOORHCOCHR.render(Unknown Source)
+	at Genesis//net.minecraft.client.gui.screens.LoadingOverlay.render(SourceFile:85)
+	at Genesis//net.minecraft.client.renderer.GameRenderer.render(SourceFile:918)
+	at Genesis//net.minecraft.client.Minecraft.runTick(SourceFile:1193)
+	at Genesis//net.minecraft.client.Minecraft.run(SourceFile:781)
+	at Genesis//net.minecraft.client.main.Main.run(SourceFile:244)
+	at Genesis//net.minecraft.client.main.Main.main(SourceFile:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at com.moonsworth.lunar.genesis.Genesis.main(Unknown Source)
+
+-- Overlay render details --
+Details:
+	Overlay name: net.minecraft.client.gui.screens.LoadingOverlay
+Stacktrace:
+	at Genesis//net.minecraft.client.renderer.GameRenderer.render(SourceFile:918)
+	at Genesis//net.minecraft.client.Minecraft.runTick(SourceFile:1193)
+	at Genesis//net.minecraft.client.Minecraft.run(SourceFile:781)
+	at Genesis//net.minecraft.client.main.Main.run(SourceFile:244)
+	at Genesis//net.minecraft.client.main.Main.main(SourceFile:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at com.moonsworth.lunar.genesis.Genesis.main(Unknown Source)
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: vanilla, lunar
+Stacktrace:
+	at Genesis//net.minecraft.client.ResourceLoadStateTracker.fillCrashReport(SourceFile:49)
+	at Genesis//net.minecraft.client.Minecraft.fillReport(SourceFile:2397)
+	at Genesis//net.minecraft.client.Minecraft.run(SourceFile:800)
+	at Genesis//net.minecraft.client.main.Main.run(SourceFile:244)
+	at Genesis//net.minecraft.client.main.Main.main(SourceFile:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at com.moonsworth.lunar.genesis.Genesis.main(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19.3
+	Minecraft Version ID: 1.19.3
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 17.0.3, Azul Systems, Inc.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Azul Systems, Inc.
+	Memory: 14564798464 bytes (13890 MiB) / 16458448896 bytes (15696 MiB) up to 16458448896 bytes (15696 MiB)
+	CPUs: 12
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 5 5500U with Radeon Graphics         
+	Identifier: AuthenticAMD Family 23 Model 104 Stepping 1
+	Microarchitecture: unknown
+	Frequency (GHz): 2.10
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: AMD Radeon(TM) Graphics
+	Graphics card #0 vendor: Advanced Micro Devices, Inc. (0x1002)
+	Graphics card #0 VRAM (MB): 512.00
+	Graphics card #0 deviceId: 0x164c
+	Graphics card #0 versionInfo: DriverVersion=30.0.14046.0
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 3.20
+	Memory slot #0 type: Unknown
+	Memory slot #1 capacity (MB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 3.20
+	Memory slot #1 type: Unknown
+	Virtual memory max (MB): 29326.91
+	Virtual memory used (MB): 26052.96
+	Swap memory total (MB): 13631.41
+	Swap memory used (MB): 650.79
+	JVM Flags: 6 total; -XX:+DisableAttachMechanism -XX:+DisableAttachMechanism -Xms15695m -Xmx15695m -XX:+DisableAttachMechanism -XX:+DisableAttachMechanism
+	Loaded Shaderpack: (off)
+	NEC status: No NEC detected
+	Launched Version: 1.19.3
+	Backend library: LWJGL version 3.3.1 SNAPSHOT
+	Backend API: AMD Radeon(TM) Graphics GL version 3.2.14802 Core Profile Forward-Compatible Context 21.40.46 30.0.14046.0, ATI Technologies Inc.
+	Window size: 1920x1080
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'lunarclient:0caf49b'
+	Type: Client (map_client.txt)
+	Graphics mode: fancy
+	Resource Packs: vanilla, lunar
+	Current Language: English (US)
+	CPU: 12x AMD Ryzen 5 5500U with Radeon Graphics 

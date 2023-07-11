@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 2,
+  "type": "single-sprite-square-textured",
+  "blend": {
+    "type": "add"
+  },
+  "texture": "minecraft:optifine/sky/world0/sky_sunflare.png",
+  "properties": {
+    "fade": {
+      "startFadeIn": 11833,
+      "endFadeIn": 12500,
+      "startFadeOut": 12666,
+      "endFadeOut": 13333
+    },
+    "shouldRotate": true,
+    "rotation": {
+      "axis": [
+        90.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "conditions": {
+    "worlds": [
+      "minecraft:overworld"
+    ]
+  },
+  "decorations": {
+    "showStars": false,
+    "showSun": false,
+    "showMoon": false
+  }
+}

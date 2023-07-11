@@ -1,0 +1,11 @@
+{
+	"cacheMap" : 
+	{
+		"release" : 
+		{
+			"rawResponse" : "{\n\t\"result\" : \n\t{\n\t\t\"buildName\" : \"release\",\n\t\t\"downloadUrl\" : \"https://redstone-launcher.mojang.com/release\"\n\t}\n}",
+			"validUntil" : "2023-06-23T18:34:42.271Z"
+		}
+	},
+	"version" : 1
+}
